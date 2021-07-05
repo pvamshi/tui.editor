@@ -16,6 +16,7 @@ export class ListItem extends NodeSchema {
         task: { default: false },
         checked: { default: false },
         rawHTML: { default: null },
+        nodeid: { default: null },
       },
       defining: true,
       parseDOM: [

@@ -6,6 +6,7 @@ type NodeAttrs = Record<string, any>;
 interface CustomAttrs {
   htmlAttrs: { default: any };
   classNames: { default: null | string[] };
+  nodeid: { default: null | string };
 }
 
 export function findNodeBy(
@@ -100,6 +101,7 @@ export function getDefaultCustomAttrs(): CustomAttrs {
   return {
     htmlAttrs: { default: null },
     classNames: { default: null },
+    nodeid: { default: null },
   };
 }
 
